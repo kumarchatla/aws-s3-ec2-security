@@ -5,14 +5,14 @@
 
 provider "aws" {
   region     = "us-west-2"
-  profile    = "siva"
+  profile    = "myprofile"
 }
 
 # ----------------------------------------------------------------------------------------
 # Create S3 bucket
 # ----------------------------------------------------------------------------------------
 resource "aws_s3_bucket" "s3_open" {
-  bucket = "siva-code-files"
+  bucket = "my-code-files"
   acl           = "private"
 tags = {
     Name = "Code test S3 Bucket"
@@ -21,7 +21,7 @@ tags = {
 
 
 resource "aws_s3_bucket_policy" "s3_open" {
-  bucket = "siva-code-files"
+  bucket = "my-code-files"
 
   policy = <<POLICY
 {
