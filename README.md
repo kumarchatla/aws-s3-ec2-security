@@ -1,4 +1,4 @@
-## Code Test Terraform:
+## Terraform :
 
 ### This project is to demonstrate the basis of restricting S3 access to specific EC2 instances Using Terraform
  #### Steps:
